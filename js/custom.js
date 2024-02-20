@@ -14,6 +14,42 @@
 
 
 ******************************/
+// topBar
+let lastScrollTop = 0;
+const topBar = document.getElementById('topBar');
+const menuToggle = document.getElementById('menuToggle');
+
+menuToggle.addEventListener('click', function() {
+  if (topBar.style.display === 'none') {
+    topBar.style.display = 'flex'; // Show the top bar
+  } else {
+    topBar.style.display = 'none'; // Hide the top bar
+  }
+});
+
+window.addEventListener('scroll', function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    topBar.style.top = '-100px';
+    if (topBar.style.display === 'flex') {
+      menuToggle.style.display = 'none'; // Hide toggle icon if top bar is visible and scrolled down
+    } else {
+      menuToggle.style.display = 'block';
+    }
+  } else {
+    topBar.style.top = '0';
+  }
+  
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+
+
+
+
+
+
 
 $(document).ready(function()
 {

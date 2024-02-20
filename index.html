@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <link rel="stylesheet" href="styles/flaticon.css">
+<link rel="stylesheet" href="styles/styles.css">
 
 
 </head>
@@ -60,6 +61,81 @@
 
 	</header> -->
 	
+      <!-- topBar -->
+      <div class="top-bar" id="topBar">
+        <div class="left-section">
+          <span class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            Brooklyn, NY 10036, United States
+          </span>
+          <span class="contact">
+            <i class="fas fa-phone"></i>
+            +1-123-456-7890
+          </span>
+          <span class="email">
+            <i class="fas fa-envelope"></i>
+            info@probootstrap.com
+          </span>
+        </div>
+        <div class="right-section">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    
+      <!-- Three-dot icon for responsive toggle -->
+      <div class="menu-toggle" id="menuToggle">
+        <i id="toggle" class="fas fa-ellipsis-v"></i>
+      </div>
+
+      <!-- navbar -->
+
+      <nav id="main-navbar">
+        <div class="wrapper">
+          <div class="logo"><img src="/images/logo.png" /></div>
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"
+              ><i class="fas fa-times"></i
+            ></label>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Teachers</a></li>
+            <li><a href="#">Events</a></li>
+            <li>
+              <a href="#" class="desktop-item">Pages</a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Pages</label>
+              <ul class="drop-menu">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Single courses</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Sub menu</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </div>
+      </nav> 
+
+    
+
+
+
+
+
+
+
 	<!-- Menu -->
 	<div class="menu_container menu_mm">
 
@@ -584,7 +660,84 @@
 
 
 
-
+    <section class="ftco-services ftco-no-pb">
+        <div class="container-wrap">
+          <div class="row no-gutters card1">
+            <div
+              class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate tomato"
+            >
+              <div class="media block-6 d-block text-center ">
+                <div
+                  class="icon d-flex justify-content-center align-items-center"
+                >
+                  <span class="flaticon-teacher"> </span>
+                </div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading">Certified Teachers</h3>
+                  <p>
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate black"
+            >
+              <div class="media block-6 d-block text-center">
+                <div
+                  class="icon d-flex justify-content-center align-items-center"
+                >
+                  <span class="flaticon-reading"></span>
+                </div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading">Special Education</h3>
+                  <p>
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate tomato"
+            >
+              <div class="media block-6 d-block text-center">
+                <div
+                  class="icon d-flex justify-content-center align-items-center"
+                >
+                  <span class="flaticon-books"></span>
+                </div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading">Book &amp; Library</h3>
+                  <p>
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate black"
+            >
+              <div class="media block-6 d-block text-center">
+                <div
+                  class="icon d-flex justify-content-center align-items-center"
+                >
+                  <span class="flaticon-diploma"></span>
+                </div>
+                <div class="media-body p-2 mt-3">
+                  <h3 class="heading">Sport Clubs</h3>
+                  <p>
+                    Even the all-powerful Pointing has no control about the
+                    blind texts it is an almost unorthographic.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -999,6 +1152,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="js/custom.js"></script>
+
+
+
+
 
 </body>
 </html>
